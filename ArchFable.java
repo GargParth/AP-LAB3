@@ -449,7 +449,7 @@ class Monster
         {
             case 1 : this.HP = Double.parseDouble( String.valueOf(100) );
                     break;
-            case 2 : this.HP = Double.parseDouble( String.valueOf(100) );
+            case 2 : this.HP = Double.parseDouble( String.valueOf(150) );
                     break;
             case 3 : this.HP = Double.parseDouble( String.valueOf(200) );
                     break;
@@ -823,10 +823,12 @@ class GameplayEngine
                 Double monHP = Double.parseDouble( String.valueOf(0) );
                 switch( p.getCurrent_location().getLocal_monster().getLevel())
                 {
-                    case 1:
-                    case 2: monHP = Double.parseDouble( String.valueOf(100) );
+                    case 1: monHP = Double.parseDouble( String.valueOf(100) );
+                            break;
+                    case 2: monHP = Double.parseDouble( String.valueOf(150) );
                             break;
                     case 3: monHP = Double.parseDouble( String.valueOf(200) );
+                            break;
                     case 4: monHP = Double.parseDouble( String.valueOf(250) );
                 }
                 p.getCurrent_location().getLocal_monster().setHP(monHP);
@@ -846,10 +848,12 @@ class GameplayEngine
                 Double monHP = Double.parseDouble( String.valueOf(0) );
                 switch( p.getCurrent_location().getLocal_monster().getLevel())
                 {
-                    case 1:
-                    case 2: monHP = Double.parseDouble( String.valueOf(100) );
+                    case 1: monHP = Double.parseDouble( String.valueOf(100) );
+                            break;
+                    case 2: monHP = Double.parseDouble( String.valueOf(150) );
                             break;
                     case 3: monHP = Double.parseDouble( String.valueOf(200) );
+                            break;
                     case 4: monHP = Double.parseDouble( String.valueOf(250) );
                 }
                 p.getCurrent_location().getLocal_monster().setHP(monHP);
